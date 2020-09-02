@@ -1,0 +1,121 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+  --width: 600px;
+  --img-size: 60px;
+  --margin-background: 100px;
+  --margin-list: 10px;
+  --margin-img: 20px;
+  --padding-text: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: var(--color-black);
+  margin: var(--margin-background) var(--margin-background);
+  width: var(--width);
+}
+
+header {
+  padding-bottom: calc(var(--margin-background) / 4);
+  display: flex;
+  justify-content: center;
+}
+
+/**nav bar**/
+
+nav.nav_bar {
+  display: flex;
+  margin-bottom: calc(var(--margin-background) / 4);
+}
+
+nav.nav_bar .img_btns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav.nav_bar .img_btns img {
+  width: var(--img-size);
+}
+
+nav.nav_bar .text_btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+nav.nav_bar .text_btns button {
+  font-size: larger;
+  padding: var(--padding-text);
+}
+
+nav.nav_bar .text_btns button.blue_btn {
+  background-color: var(--color-blue);
+}
+
+nav.nav_bar .text_btns button.yellow_btn {
+  background-color: var(--color-yellow);
+}
+
+nav.nav_bar .text_btns button.pink_btn {
+  background-color: var(--color-pink);
+}
+
+nav.nav_bar button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--color-black);
+  width: fit-content;
+  height: fit-content;
+}
+
+/**section**/
+section::-webkit-scrollbar {
+  width: 10px;
+}
+
+section::-webkit-scrollbar-track {
+  background: var(--color-white);
+}
+
+section::-webkit-scrollbar-thumb {
+  background: var(--color-blue);
+}
+
+section::-webkit-scrollbar-thumb:hover {
+  background: var(--color-yellow);
+}
+
+section ul li {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  margin: var(--margin-list);
+}
+
+section ul li img {
+  width: var(--img-size);
+  margin: 0 var(--margin-img);
+}
+
+section ul li div {
+  margin: 0 calc(var(--margin-img) / 2);
+}
