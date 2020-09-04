@@ -12,6 +12,7 @@
   --margin-list: 10px;
   --margin-img: 20px;
   --padding-text: 18px;
+  --border-radius: 4px;
 }
 
 * {
@@ -37,6 +38,10 @@ header {
 }
 
 /**nav bar**/
+
+button:hover {
+  transform: scale(1.2);
+}
 
 nav.nav_bar {
   display: flex;
@@ -87,27 +92,21 @@ nav.nav_bar button {
 }
 
 /**section**/
-section::-webkit-scrollbar {
-  width: 10px;
+section ul {
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
-section::-webkit-scrollbar-track {
-  background: var(--color-white);
-}
-
-section::-webkit-scrollbar-thumb {
-  background: var(--color-blue);
-}
-
-section::-webkit-scrollbar-thumb:hover {
-  background: var(--color-yellow);
+section ul::-webkit-scrollbar {
+  display: none;
 }
 
 section ul li {
   display: flex;
   align-items: center;
   background-color: white;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   margin: var(--margin-list);
 }
 

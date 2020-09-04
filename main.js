@@ -19,49 +19,49 @@ const clothesArray = [
 ];
 
 const textsArray = [
+  "male, small size",
   "female, large size",
-  "man, small size",
-  "man, large size",
-  "man, large size",
+  "male, large size",
+  "female, large size",
   "female, small size",
-  "male, large size",
+  "female, large size",
   "male, large size",
   "female, large size",
-  "man, small size",
+  "male, small size",
 ];
 
-var section = document.createElement("section");
+console.log(document.getElementsByClassName("shirts_btn").onclick === true);
+
+const section = document.createElement("section");
 section.className = "shoppingList";
 document.body.appendChild(section);
 
-var ul = document.createElement("ul");
-ul.className = "listUl";
-section.appendChild(ul);
+// 반복 시작 ------------
 
-var li = document.createElement("li");
-ul.appendChild(li);
+function makeUl() {
+  const ul = document.createElement("ul");
+  ul.className = "listUl";
+  section.appendChild(ul);
+  if (textsArray.length === 9) {
+    var x = 2;
+  } else {
+    var x = 1;
+  }
+  for (let i = 0; i < x; i++) {
+    for (let i = 0; i < textsArray.length; i++) {
+      const li = document.createElement("li");
+      const img = document.createElement("img");
+      const div = document.createElement("div");
 
-var img = document.createElement("img");
-img.className = "shopping_img";
-img.alt = "";
-li.appendChild(img);
+      li.appendChild(img);
+      img.src = clothesArray[i];
+      img.className = "shopping_img";
+      li.appendChild(div);
+      div.className = "shopping_text";
+      div.appendChild(document.createTextNode(textsArray[i]));
 
-var div = document.createElement("div");
-div.className = "shopping_text";
-li.appendChild(div);
-
-function listmaker() {
-  for (let i = 0; i < clothesArray.length; i++) {
-    li[i];
-    img[i];
-    div[i];
-    const imgIndex = document.getElementsByTagName("img")[i].src;
-    imgIndex = clothesArray[i];
-    const textIndex = document.getElementsByTagName("div")[i].innerHTML;
-    textIndex = textsArray[i];
-    console.log(li);
+      ul.appendChild(li);
+    }
   }
 }
-listmaker();
-
-console.log(section);
+makeUl();
