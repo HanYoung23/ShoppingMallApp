@@ -1,16 +1,13 @@
 "use strict";
 
-var shirtsArray = ["img/blue_t.png", "img/pink_t.png", "img/yellow_t.png"];
-
-var skirtArray = ["img/blue_s.png", "img/pink_s.png", "img/yellow_s.png"];
-
-var pantsArray = ["img/blue_p.png", "img/pink_p.png", "img/yellow_p.png"];
-
-var blueArray = ["img/blue_t.png", "img/blue_s.png", "img/blue_p.png"];
-
-var pinkArray = ["img/pink_t.png", "img/pink_s.png", "img/pink_p.png"];
-
-var yellowArray = ["img/yellow_t.png", "img/yellow_s.png", "img/yellow_p.png"];
+function ButtonClass() {
+  this.shirts = ["img/blue_t.png", "img/pink_t.png", "img/yellow_t.png"];
+  this.pants = ["img/blue_p.png", "img/pink_p.png", "img/yellow_p.png"];
+  this.skirt = ["img/blue_s.png", "img/pink_s.png", "img/yellow_s.png"];
+  this.blue = ["img/blue_t.png", "img/blue_s.png", "img/blue_p.png"];
+  this.pink = ["img/pink_t.png", "img/pink_s.png", "img/pink_p.png"];
+  this.yellow = ["img/yellow_t.png", "img/yellow_s.png", "img/yellow_p.png"];
+}
 
 var clothesArray = [
   "img/blue_t.png",
@@ -79,6 +76,7 @@ var buttonArray = [
   ".pink_btn",
   ".yellow_btn",
 ];
+console.log(`"${buttonArray[0]}"`);
 var buttonMenuArray = [
   "shirtsArray",
   "pantsArray",
