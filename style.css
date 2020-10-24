@@ -29,6 +29,7 @@ body {
   background-color: var(--color-black);
   margin: var(--margin-background) var(--margin-background);
   width: var(--width);
+  margin: 100px auto;
 }
 
 header {
