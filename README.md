@@ -1,4 +1,7 @@
 # ShoppingMallApp
+#HTML #CSS #Javascript
+
+게임 플레이 -> https://hanyoung23.github.io/ShoppingMallApp/
 
 ### 기능()
 - .jason()
