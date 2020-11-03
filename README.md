@@ -1,4 +1,6 @@
 # ShoppingMallApp
+
+### 쇼핑몰 앱입니다. (프로젝트 기간 - 3일)
 #HTML #CSS #Javascript
 
 게임 플레이 -> https://hanyoung23.github.io/ShoppingMallApp/
